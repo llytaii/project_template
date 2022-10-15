@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "tests"
+			"path" : "template_project"
 		}
 	],
 	"backtrace" : 1,
@@ -26,19 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 16,
+				"line" : 7,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 18,
+				"line" : 12,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 17,
+				"line" : 8,
 				"parent" : 0
 			}
 		]
@@ -55,6 +55,17 @@
 					"fragment" : "-std=gnu++20"
 				}
 			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "FMT_LOCALE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "FMT_SHARED"
+				}
+			],
 			"includes" : 
 			[
 				{
@@ -67,24 +78,6 @@
 			{
 				"backtraces" : 
 				[
-					2,
-					2,
-					2,
-					2,
-					2,
-					2,
-					2,
-					2,
-					2,
-					2,
-					2,
-					2,
-					2,
-					2,
-					2,
-					2,
-					2,
-					2,
 					2
 				],
 				"standard" : "20"
@@ -95,7 +88,7 @@
 			]
 		}
 	],
-	"id" : "tests::@6890427a1f51a3e7e1df",
+	"id" : "template_project::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -110,14 +103,18 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/lib/libCatch2WithMain.a",
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libfmt.so.8.1.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,--as-needed",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "tests",
-	"nameOnDisk" : "tests",
+	"name" : "template_project",
+	"nameOnDisk" : "template_project",
 	"paths" : 
 	{
 		"build" : ".",
@@ -138,7 +135,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "tests/tests.cpp",
+			"path" : "src/main.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
