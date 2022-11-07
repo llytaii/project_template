@@ -5,7 +5,7 @@ project(${PROJECT_NAME} C CXX)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(${PROJECT_NAME} src/main.cpp)
-target_include_directories(${PROJECT_NAME} PUBLIC include)
+target_include_directories(${PROJECT_NAME} PUBLIC tools)
 
 # fmt
 find_package(fmt)
