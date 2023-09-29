@@ -16,7 +16,7 @@ find_package(Catch2 2 REQUIRED)
 
 add_executable(tests tests/tests.cpp)
 target_include_directories(tests PUBLIC include)
-# target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
+target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
 
 # enable make test
 include(CTest)
